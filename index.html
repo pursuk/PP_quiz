@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>PP quiz</title>
+    <link rel="stylesheet" href="main.css">
+</head>
+<body>
+<div class="container">
+    <header class="header">
+        <h1 id="title" class="text-center">Przykładowy test na PP</h1>
+        <p id="description" class="description">
+            Zaznacz na 5-stopniowej skali na ile zdanie pasuje/opisuje ciebie, gdzie kolejne cyfry oznaczają:<br><br>
+            1 - zdecydowanie nie<br>
+            2 - raczej nie<br>
+            3 - trochę nie, trochę tak <br>
+            4 - raczej tak <br>
+            5 - zdecydowanie tak <br>
+        </p>
+    </header>
+    <form id="survey-form">
+        <div class="form-group">
+            <p>Pytanie nr1</p>
+            <div class="break"></div>
+            <label>
+                <input
+                        name="user-recommend"
+                        value=1
+                        type="radio"
+                        class="input-radio"
+                        checked
+                />1</label
+            >
+            <label>
+                <input
+                        name="user-recommend"
+                        value=2
+                        type="radio"
+                        class="input-radio"
+                />2</label
+            >
+
+            <label
+            ><input
+                    name="user-recommend"
+                    value=3
+                    type="radio"
+                    class="input-radio"
+            />3</label
+            >
+            <label
+            ><input
+                    name="user-recommend"
+                    value=4
+                    type="radio"
+                    class="input-radio"
+            />4</label
+            >
+            <label
+            ><input
+                    name="user-recommend"
+                    value=5
+                    type="radio"
+                    class="input-radio"
+            />5</label
+            >
+        </div>
+        <div class="form-group">
+            <button type="submit" id="submit" class="submit-button">
+                Prześlij
+            </button>
+        </div>
+    </form>
+</div>
+
+
+</body>
+</html>
