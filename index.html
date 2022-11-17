@@ -18,39 +18,38 @@
             5 - zdecydowanie tak <br>
         </p>
     </header>
-    <form id="survey-form">
+    <form id="survey-form" onsubmit="event.preventDefault(); submitHandler();">
         <div class="form-group">
             <p>Pytanie nr1</p>
             <div class="break"></div>
             <label>
                 <input
-                        name="user-recommend"
+                        name="q1"
                         value=1
                         type="radio"
                         class="input-radio"
-                        checked
                 />1</label
             >
             <label>
                 <input
-                        name="user-recommend"
+                        name="q1"
                         value=2
                         type="radio"
                         class="input-radio"
                 />2</label
             >
-
-            <label
-            ><input
-                    name="user-recommend"
+            <label>
+                <input
+                    name="q1"
                     value=3
                     type="radio"
                     class="input-radio"
+                    required
             />3</label
             >
             <label
             ><input
-                    name="user-recommend"
+                    name="q1"
                     value=4
                     type="radio"
                     class="input-radio"
@@ -58,7 +57,140 @@
             >
             <label
             ><input
-                    name="user-recommend"
+                    name="q1"
+                    value=5
+                    type="radio"
+                    class="input-radio"
+            />5</label
+            >
+        </div>
+        <div class="form-group">
+            <p>Pytanie nr2</p>
+            <div class="break"></div>
+            <label>
+                <input
+                        name="q2"
+                        value=1
+                        type="radio"
+                        class="input-radio"
+                />1</label
+            >
+            <label>
+                <input
+                        name="q2"
+                        value=2
+                        type="radio"
+                        class="input-radio"
+                />2</label
+            >
+            <label
+            ><input
+                    name="q2"
+                    value=3
+                    type="radio"
+                    class="input-radio"
+                    required
+            />3</label
+            >
+            <label
+            ><input
+                    name="q2"
+                    value=4
+                    type="radio"
+                    class="input-radio"
+            />4</label
+            >
+            <label
+            ><input
+                    name="q2"
+                    value=5
+                    type="radio"
+                    class="input-radio"
+            />5</label
+            >
+        </div>
+        <div class="form-group">
+            <p>Pytanie nr3</p>
+            <div class="break"></div>
+            <label>
+                <input
+                        name="q3"
+                        value=1
+                        type="radio"
+                        class="input-radio"
+                />1</label
+            >
+            <label>
+                <input
+                        name="q3"
+                        value=2
+                        type="radio"
+                        class="input-radio"
+                />2</label
+            >
+            <label
+            ><input
+                    name="q3"
+                    value=3
+                    type="radio"
+                    class="input-radio"
+            />3</label
+            >
+            <label
+            ><input
+                    name="q3"
+                    value=4
+                    type="radio"
+                    class="input-radio"
+            />4</label
+            >
+            <label
+            ><input
+                    name="q3"
+                    value=5
+                    type="radio"
+                    class="input-radio"
+            />5</label
+            >
+        </div>
+        <div class="form-group">
+            <p>Pytanie nr4</p>
+            <div class="break"></div>
+            <label>
+                <input
+                        name="q4"
+                        value=1
+                        type="radio"
+                        class="input-radio"
+                />1</label
+            >
+            <label>
+                <input
+                        name="q4"
+                        value=2
+                        type="radio"
+                        class="input-radio"
+                />2</label
+            >
+            <label>
+                <input
+                    name="q4"
+                    value=3
+                    type="radio"
+                    class="input-radio"
+                />3</label
+            >
+            <label>
+                <input
+                    name="q4"
+                    value=4
+                    type="radio"
+                    class="input-radio"
+                />4</label
+            >
+            <label
+            ><input
+                    name="q4"
                     value=5
                     type="radio"
                     class="input-radio"
@@ -72,6 +204,49 @@
         </div>
     </form>
 </div>
+
+<div class="bar-div">
+    <p id="srednia12" style="display: inline">Kompetencja 1:</p>
+    <div class="bar-bg">
+        <div id="skill1" class="skill1" style="height:24px;width:0"></div>
+    </div>
+</div>
+<br>
+<div class="bar-div">
+    <p id="srednia34" style="display: inline">Kompetencja 2:</p>
+    <div class="bar-bg">
+        <div id="skill2" class="skill2" style="height:24px;width:0"></div>
+    </div>
+</div>
+<script>
+    function submitHandler(event){
+        const form=document.getElementById("survey-form")
+        const formData = new FormData(form);
+        let avg12,avg34;
+        let count12 = 0, count34 = 0;
+        let sum12 = 0, sum34 = 0;
+        let skill1_qs = ['q1', 'q2'];
+        let skill2_qs = ['q3', 'q4'];
+        for (const [key, value] of formData) {
+            console.log(key)
+            if (skill1_qs.includes(key)) {
+                console.log("is in q1q2")
+                count12 += 1
+                sum12 += Number(value)
+            } else if (skill2_qs.includes(key)) {
+            console.log("is in q3q4 ")
+            count34 += 1
+            sum34 += Number(value)
+            }
+        }
+        avg12 = sum12/count12
+        avg34 = sum34/count34
+        document.getElementById("srednia12").innerHTML = "Kompetencja 1:    " + avg12.toFixed(2)
+        document.getElementById("srednia34").innerHTML = "Kompetencja 2:    " + avg34.toFixed(2)
+        document.getElementById("skill1").style.width = avg12/5*100+"%"
+        document.getElementById("skill2").style.width = avg34/5*100+"%"
+    }
+</script>
 
 
 </body>

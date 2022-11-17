@@ -184,3 +184,20 @@ form {
     flex-basis: 100%;
     height: 0;
 }
+.bar-div{
+    width: 720px;
+    margin: 0 auto;
+}
+.bar-bg {
+    background-color: #d2d2d2;
+    width: 70%;
+    margin: 0 auto;
+    float: right;
+}
+.skill1 {
+    background-color: #70c9b3;
+}
+
+.skill2 {
+    background-color: #785aa0;
+}
