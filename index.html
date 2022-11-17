@@ -204,18 +204,21 @@
         </div>
     </form>
 </div>
-
-<div class="bar-div">
-    <p id="srednia12" style="display: inline">Kompetencja 1:</p>
-    <div class="bar-bg">
-        <div id="skill1" class="skill1" style="height:24px;width:0"></div>
+<div id="results" class="results" style="opacity: 0">
+    <h1 id="wyniki" class="text-center" style="padding: 0.75rem 0"></h1>
+    <div class="break"></div>
+    <div class="bar-div">
+        <p id="srednia12" style="display: inline"></p>
+        <div class="bar-bg">
+            <div id="skill1" class="skill" style="height:24px;width:0;background-color: #70c9b3;"></div>
+        </div>
     </div>
-</div>
-<br>
-<div class="bar-div">
-    <p id="srednia34" style="display: inline">Kompetencja 2:</p>
-    <div class="bar-bg">
-        <div id="skill2" class="skill2" style="height:24px;width:0"></div>
+    <br>
+    <div class="bar-div">
+        <p id="srednia34" style="display: inline"></p>
+        <div class="bar-bg">
+            <div id="skill2" class="skill" style="height:24px;width:0;background-color: #785aa0;"></div>
+        </div>
     </div>
 </div>
 <script>
@@ -234,20 +237,26 @@
                 count12 += 1
                 sum12 += Number(value)
             } else if (skill2_qs.includes(key)) {
-            console.log("is in q3q4 ")
-            count34 += 1
-            sum34 += Number(value)
+                console.log("is in q3q4 ")
+                count34 += 1
+                sum34 += Number(value)
             }
         }
         avg12 = sum12/count12
         avg34 = sum34/count34
+        const bars = document.querySelectorAll(".bar-bg")
+        bars.forEach(bar => {
+            bar.style.width = '70%';
+        })
+        document.getElementById("wyniki").innerText= "Wyniki:";
         document.getElementById("srednia12").innerHTML = "Kompetencja 1:    " + avg12.toFixed(2)
         document.getElementById("srednia34").innerHTML = "Kompetencja 2:    " + avg34.toFixed(2)
-        document.getElementById("skill1").style.width = avg12/5*100+"%"
-        document.getElementById("skill2").style.width = avg34/5*100+"%"
+        window.scrollTo({ top: document.body.scrollHeight, behavior: 'smooth' })
+        document.getElementById("results").style.opacity = "100%";
+        document.getElementById("skill1").style.width = (avg12-1)*25+"%"
+        document.getElementById("skill2").style.width = (avg34-1)*25+"%"
+
     }
 </script>
-
-
 </body>
 </html>
