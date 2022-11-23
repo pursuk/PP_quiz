@@ -8,64 +8,41 @@
 <body>
 <div class="container">
     <header class="header">
-        <h1 id="title" class="text-center">Przykładowy test na PP</h1>
+        <h1 id="title" class="text-center">Get test</h1>
         <p id="description" class="description">
-            Zaznacz na 5-stopniowej skali na ile zdanie pasuje/opisuje ciebie, gdzie kolejne cyfry oznaczają:<br><br>
-            1 - zdecydowanie nie<br>
-            2 - raczej nie<br>
-            3 - trochę nie, trochę tak <br>
-            4 - raczej tak <br>
-            5 - zdecydowanie tak <br>
+            Zdecyduj, czy zgadzasz się z tymi stwierdzeniami, czy też nie.
+            W tym teście nie ma dobrych i złych odpowiedzi.
+            Jego wypełnienie powinno zająć Ci około dziesięciu minut, a wynik da Ci pojęcie o Twoim potencjale przedsiębiorczości.
+            Dla każdego stwierdzenia kliknij odpowiedź, która najlepiej wyraża Twoje zdanie.
+            Odpowiadaj na wszystkie pytania szybko i szczerze, ponieważ w ten sposób uzyskasz najlepszy obraz siebie, jakim jesteś obecnie.
+            <br>
+            Źródło: http://www.get2test.net/
         </p>
     </header>
     <form id="survey-form" onsubmit="event.preventDefault(); submitHandler();">
         <div class="form-group">
-            <p>Pytanie nr1</p>
+            <p>1. Nie miałbym nic przeciwko rutynowej, mało wymagającej pracy, gdyby wynagrodzenie i perspektywy emerytalne były dobre.</p>
             <div class="break"></div>
+            <label>
+                <input
+                        name="q1"
+                        value=0
+                        type="radio"
+                        class="input-radio"
+                        required
+                />Tak</label
+            >
             <label>
                 <input
                         name="q1"
                         value=1
                         type="radio"
                         class="input-radio"
-                />1</label
-            >
-            <label>
-                <input
-                        name="q1"
-                        value=2
-                        type="radio"
-                        class="input-radio"
-                />2</label
-            >
-            <label>
-                <input
-                    name="q1"
-                    value=3
-                    type="radio"
-                    class="input-radio"
-                    required
-            />3</label
-            >
-            <label
-            ><input
-                    name="q1"
-                    value=4
-                    type="radio"
-                    class="input-radio"
-            />4</label
-            >
-            <label
-            ><input
-                    name="q1"
-                    value=5
-                    type="radio"
-                    class="input-radio"
-            />5</label
+                />Nie</label
             >
         </div>
         <div class="form-group">
-            <p>Pytanie nr2</p>
+            <p>2. Lubię sprawdzać granice i wchodzić w obszary, w których mało kto wcześniej pracował.</p>
             <div class="break"></div>
             <label>
                 <input
@@ -73,88 +50,41 @@
                         value=1
                         type="radio"
                         class="input-radio"
-                />1</label
+                        required
+                />Tak</label
             >
             <label>
                 <input
                         name="q2"
-                        value=2
+                        value=0
                         type="radio"
                         class="input-radio"
-                />2</label
-            >
-            <label
-            ><input
-                    name="q2"
-                    value=3
-                    type="radio"
-                    class="input-radio"
-                    required
-            />3</label
-            >
-            <label
-            ><input
-                    name="q2"
-                    value=4
-                    type="radio"
-                    class="input-radio"
-            />4</label
-            >
-            <label
-            ><input
-                    name="q2"
-                    value=5
-                    type="radio"
-                    class="input-radio"
-            />5</label
+                />Nie</label
             >
         </div>
         <div class="form-group">
-            <p>Pytanie nr3</p>
+            <p>3. Na ogół nie lubię się wyróżniać ani być niekonwencjonalnym.</p>
             <div class="break"></div>
+            <label>
+                <input
+                        name="q3"
+                        value=0
+                        type="radio"
+                        class="input-radio"
+                        required
+                />Tak</label
+            >
             <label>
                 <input
                         name="q3"
                         value=1
                         type="radio"
                         class="input-radio"
-                />1</label
-            >
-            <label>
-                <input
-                        name="q3"
-                        value=2
-                        type="radio"
-                        class="input-radio"
-                />2</label
-            >
-            <label
-            ><input
-                    name="q3"
-                    value=3
-                    type="radio"
-                    class="input-radio"
-            />3</label
-            >
-            <label
-            ><input
-                    name="q3"
-                    value=4
-                    type="radio"
-                    class="input-radio"
-            />4</label
-            >
-            <label
-            ><input
-                    name="q3"
-                    value=5
-                    type="radio"
-                    class="input-radio"
-            />5</label
+                />Nie</label
             >
         </div>
         <div class="form-group">
-            <p>Pytanie nr4</p>
+            <p>4. Zdolni ludzie, którym nie udało się odnieść sukcesu, zazwyczaj nie wykorzystywali szans, gdy się one pojawiały.</p>
             <div class="break"></div>
             <label>
                 <input
@@ -162,41 +92,1070 @@
                         value=1
                         type="radio"
                         class="input-radio"
-                />1</label
+                        required
+                />Tak</label
             >
             <label>
                 <input
                         name="q4"
-                        value=2
+                        value=0
                         type="radio"
                         class="input-radio"
-                />2</label
-            >
-            <label>
-                <input
-                    name="q4"
-                    value=3
-                    type="radio"
-                    class="input-radio"
-                />3</label
-            >
-            <label>
-                <input
-                    name="q4"
-                    value=4
-                    type="radio"
-                    class="input-radio"
-                />4</label
-            >
-            <label
-            ><input
-                    name="q4"
-                    value=5
-                    type="radio"
-                    class="input-radio"
-            />5</label
+                />Nie</label
             >
         </div>
+        <div class="form-group">
+            <p>5. Rzadko zdarza mi się śnić.</p>
+            <div class="break"></div>
+            <label>
+                <input
+                        name="q5"
+                        value=0
+                        type="radio"
+                        class="input-radio"
+                        required
+                />Tak</label
+            >
+            <label>
+                <input
+                        name="q5"
+                        value=1
+                        type="radio"
+                        class="input-radio"
+                />Nie</label
+            >
+        </div>
+        <div class="form-group">
+            <p>6. Trudno mi się całkowicie wyłączyć z pracy.</p>
+            <div class="break"></div>
+            <label>
+                <input
+                        name="q6"
+                        value=1
+                        type="radio"
+                        class="input-radio"
+                        required
+                />Tak</label
+            >
+            <label>
+                <input
+                        name="q6"
+                        value=0
+                        type="radio"
+                        class="input-radio"
+                />Nie</label
+            >
+        </div>
+        <div class="form-group">
+            <p>7. Albo jesteś w czymś naturalnie dobry, albo nie, wysiłek nie robi różnicy.</p>
+            <div class="break"></div>
+            <label>
+                <input
+                        name="q7"
+                        value=0
+                        type="radio"
+                        class="input-radio"
+                        required
+                />Tak</label
+            >
+            <label>
+                <input
+                        name="q7"
+                        value=1
+                        type="radio"
+                        class="input-radio"
+                />Nie</label
+            >
+        </div>
+        <div class="form-group">
+            <p>8. Czasami ludzie uważają moje pomysły za niezwykłe.</p>
+            <div class="break"></div>
+            <label>
+                <input
+                        name="q8"
+                        value=1
+                        type="radio"
+                        class="input-radio"
+                        required
+                />Tak</label
+            >
+            <label>
+                <input
+                        name="q8"
+                        value=0
+                        type="radio"
+                        class="input-radio"
+                />Nie</label
+            >
+        </div>
+        <div class="form-group">
+            <p>9. Wolę kupić los na loterii niż wziąć udział w konkursie.</p>
+            <div class="break"></div>
+            <label>
+                <input
+                        name="q9"
+                        value=0
+                        type="radio"
+                        class="input-radio"
+                        required
+                />Tak</label
+            >
+            <label>
+                <input
+                        name="q9"
+                        value=1
+                        type="radio"
+                        class="input-radio"
+                />Nie</label
+            >
+        </div>
+        <div class="form-group">
+            <p>10. Lubię wyzwania, które rozciągają moje możliwości i nudzą mnie rzeczy, które mogę zrobić dość łatwo.</p>
+            <div class="break"></div>
+            <label>
+                <input
+                        name="q10"
+                        value=1
+                        type="radio"
+                        class="input-radio"
+                        required
+                />Tak</label
+            >
+            <label>
+                <input
+                        name="q10"
+                        value=0
+                        type="radio"
+                        class="input-radio"
+                />Nie</label
+            >
+        </div>
+        <div class="form-group">
+            <p>11. Wolę mieć umiarkowane dochody w bezpiecznej pracy niż wysokie dochody w pracy, która zależy od mojej wydajności.</p>
+            <div class="break"></div>
+            <label>
+                <input
+                        name="q11"
+                        value=0
+                        type="radio"
+                        class="input-radio"
+                        required
+                />Tak</label
+            >
+            <label>
+                <input
+                        name="q11"
+                        value=1
+                        type="radio"
+                        class="input-radio"
+                />Nie</label
+            >
+        </div>
+        <div class="form-group">
+            <p>12. W pracy często przejmuję projekty i kieruję nimi po swojemu, nie przejmując się tym, co myślą inni ludzie.</p>
+            <div class="break"></div>
+            <label>
+                <input
+                        name="q12"
+                        value=1
+                        type="radio"
+                        class="input-radio"
+                        required
+                />Tak</label
+            >
+            <label>
+                <input
+                        name="q12"
+                        value=0
+                        type="radio"
+                        class="input-radio"
+                />Nie</label
+            >
+        </div>
+        <div class="form-group">
+            <p>13. Wiele złych chwil, które ludzie przeżywają, wynika z pecha.</p>
+            <div class="break"></div>
+            <label>
+                <input
+                        name="q13"
+                        value=0
+                        type="radio"
+                        class="input-radio"
+                        required
+                />Tak</label
+            >
+            <label>
+                <input
+                        name="q13"
+                        value=1
+                        type="radio"
+                        class="input-radio"
+                />Nie</label
+            >
+        </div>
+        <div class="form-group">
+            <p>14. Czasami myślę o informacjach niemal obsesyjnie, aż wpadam na nowe pomysły i rozwiązania.</p>
+            <div class="break"></div>
+            <label>
+                <input
+                        name="q14"
+                        value=1
+                        type="radio"
+                        class="input-radio"
+                        required
+                />Tak</label
+            >
+            <label>
+                <input
+                        name="q14"
+                        value=0
+                        type="radio"
+                        class="input-radio"
+                />Nie</label
+            >
+        </div>
+        <div class="form-group">
+            <p>15. Jeśli mam problemy z jakimś zadaniem, zostawiam je, zapominam o nim i przechodzę do czegoś innego.</p>
+            <div class="break"></div>
+            <label>
+                <input
+                        name="q15"
+                        value=0
+                        type="radio"
+                        class="input-radio"
+                        required
+                />Tak</label
+            >
+            <label>
+                <input
+                        name="q15"
+                        value=1
+                        type="radio"
+                        class="input-radio"
+                />Nie</label
+            >
+        </div>
+        <div class="form-group">
+            <p>16. Kiedy robię plany, prawie zawsze je realizuję.</p>
+            <div class="break"></div>
+            <label>
+                <input
+                        name="q16"
+                        value=1
+                        type="radio"
+                        class="input-radio"
+                        required
+                />Tak</label
+            >
+            <label>
+                <input
+                        name="q16"
+                        value=0
+                        type="radio"
+                        class="input-radio"
+                />Nie</label
+            >
+        </div>
+        <div class="form-group">
+            <p>17. Nie lubię nieoczekiwanych zmian w mojej tygodniowej rutynie.</p>
+            <div class="break"></div>
+            <label>
+                <input
+                        name="q17"
+                        value=0
+                        type="radio"
+                        class="input-radio"
+                        required
+                />Tak</label
+            >
+            <label>
+                <input
+                        name="q17"
+                        value=1
+                        type="radio"
+                        class="input-radio"
+                />Nie</label
+            >
+        </div>
+        <div class="form-group">
+            <p>18. Gdybym chciał coś osiągnąć, a szanse na powodzenie byłyby 50/50, podjąłbym ryzyko.</p>
+            <div class="break"></div>
+            <label>
+                <input
+                        name="q18"
+                        value=1
+                        type="radio"
+                        class="input-radio"
+                        required
+                />Tak</label
+            >
+            <label>
+                <input
+                        name="q18"
+                        value=0
+                        type="radio"
+                        class="input-radio"
+                />Nie</label
+            >
+        </div>
+        <div class="form-group">
+            <p>19. Myślę bardziej o teraźniejszości i przeszłości niż o przyszłości.</p>
+            <div class="break"></div>
+            <label>
+                <input
+                        name="q19"
+                        value=0
+                        type="radio"
+                        class="input-radio"
+                        required
+                />Tak</label
+            >
+            <label>
+                <input
+                        name="q19"
+                        value=1
+                        type="radio"
+                        class="input-radio"
+                />Nie</label
+            >
+        </div>
+        <div class="form-group">
+            <p>20. Gdybym miał dobry pomysł na zarobienie pieniędzy, byłbym skłonny zainwestować swój czas i pożyczyć pieniądze, aby to umożliwić.</p>
+            <div class="break"></div>
+            <label>
+                <input
+                        name="q20"
+                        value=1
+                        type="radio"
+                        class="input-radio"
+                        required
+                />Tak</label
+            >
+            <label>
+                <input
+                        name="q20"
+                        value=0
+                        type="radio"
+                        class="input-radio"
+                />Nie</label
+            >
+        </div>
+        <div class="form-group">
+            <p>21. Lubię dużo wskazówek, aby mieć naprawdę jasność, co należy robić w pracy.</p>
+            <div class="break"></div>
+            <label>
+                <input
+                        name="q21"
+                        value=0
+                        type="radio"
+                        class="input-radio"
+                        required
+                />Tak</label
+            >
+            <label>
+                <input
+                        name="q21"
+                        value=1
+                        type="radio"
+                        class="input-radio"
+                />Nie</label
+            >
+        </div>
+        <div class="form-group">
+            <p>22. Ludzie na ogół dostają to, na co zasługują.</p>
+            <div class="break"></div>
+            <label>
+                <input
+                        name="q22"
+                        value=1
+                        type="radio"
+                        class="input-radio"
+                        required
+                />Tak</label
+            >
+            <label>
+                <input
+                        name="q22"
+                        value=0
+                        type="radio"
+                        class="input-radio"
+                />Nie</label
+            >
+        </div>
+        <div class="form-group">
+            <p>23. Jestem ostrożny wobec nowych pomysłów, gadżetów i technologii.</p>
+            <div class="break"></div>
+            <label>
+                <input
+                        name="q23"
+                        value=0
+                        type="radio"
+                        class="input-radio"
+                        required
+                />Tak</label
+            >
+            <label>
+                <input
+                        name="q23"
+                        value=1
+                        type="radio"
+                        class="input-radio"
+                />Nie</label
+            >
+        </div>
+        <div class="form-group">
+            <p>24. Ważniejsze jest, aby dobrze wykonywać swoją pracę niż starać się przypodobać ludziom.</p>
+            <div class="break"></div>
+            <label>
+                <input
+                        name="q24"
+                        value=1
+                        type="radio"
+                        class="input-radio"
+                        required
+                />Tak</label
+            >
+            <label>
+                <input
+                        name="q24"
+                        value=0
+                        type="radio"
+                        class="input-radio"
+                />Nie</label
+            >
+        </div>
+        <div class="form-group">
+            <p>25. Staram się akceptować to, że rzeczy w życiu przytrafiają mi się z jakiegoś powodu.</p>
+            <div class="break"></div>
+            <label>
+                <input
+                        name="q25"
+                        value=0
+                        type="radio"
+                        class="input-radio"
+                        required
+                />Tak</label
+            >
+            <label>
+                <input
+                        name="q25"
+                        value=1
+                        type="radio"
+                        class="input-radio"
+                />Nie</label
+            >
+        </div>
+        <div class="form-group">
+            <p>26. Inni ludzie myślą, że zawsze wprowadzam zmiany i próbuję nowych pomysłów.</p>
+            <div class="break"></div>
+            <label>
+                <input
+                        name="q26"
+                        value=1
+                        type="radio"
+                        class="input-radio"
+                        required
+                />Tak</label
+            >
+            <label>
+                <input
+                        name="q26"
+                        value=0
+                        type="radio"
+                        class="input-radio"
+                />Nie</label
+            >
+        </div>
+        <div class="form-group">
+            <p>27. Jeśli istnieje szansa na niepowodzenie, wolałbym tego nie robić.</p>
+            <div class="break"></div>
+            <label>
+                <input
+                        name="q27"
+                        value=0
+                        type="radio"
+                        class="input-radio"
+                        required
+                />Tak</label
+            >
+            <label>
+                <input
+                        name="q27"
+                        value=1
+                        type="radio"
+                        class="input-radio"
+                />Nie</label
+            >
+        </div>
+        <div class="form-group">
+            <p>28. Denerwuje mnie, gdy ludzie nie są punktualni na spotkaniach.</p>
+            <div class="break"></div>
+            <label>
+                <input
+                        name="q28"
+                        value=1
+                        type="radio"
+                        class="input-radio"
+                        required
+                />Tak</label
+            >
+            <label>
+                <input
+                        name="q28"
+                        value=0
+                        type="radio"
+                        class="input-radio"
+                />Nie</label
+            >
+        </div>
+        <div class="form-group">
+            <p>29. Przed podjęciem decyzji lubię mieć wszystkie fakty, niezależnie od tego, ile czasu to zajmuje.</p>
+            <div class="break"></div>
+            <label>
+                <input
+                        name="q29"
+                        value=0
+                        type="radio"
+                        class="input-radio"
+                        required
+                />Tak</label
+            >
+            <label>
+                <input
+                        name="q29"
+                        value=1
+                        type="radio"
+                        class="input-radio"
+                />Nie</label
+            >
+        </div>
+        <div class="form-group">
+            <p>30. Rzadko potrzebuję lub chcę pomocy i lubię odcisnąć swoje piętno na pracy, którą wykonuję.</p>
+            <div class="break"></div>
+            <label>
+                <input
+                        name="q30"
+                        value=1
+                        type="radio"
+                        class="input-radio"
+                        required
+                />Tak</label
+            >
+            <label>
+                <input
+                        name="q30"
+                        value=0
+                        type="radio"
+                        class="input-radio"
+                />Nie</label
+            >
+        </div>
+        <div class="form-group">
+            <p>31. Nie ma szans na osiągnięcie sukcesu, jeśli nie znajdziesz się we właściwym miejscu i we właściwym czasie.</p>
+            <div class="break"></div>
+            <label>
+                <input
+                        name="q31"
+                        value=0
+                        type="radio"
+                        class="input-radio"
+                        required
+                />Tak</label
+            >
+            <label>
+                <input
+                        name="q31"
+                        value=1
+                        type="radio"
+                        class="input-radio"
+                />Nie</label
+            >
+        </div>
+        <div class="form-group">
+            <p>32. Wolę być dość dobry w kilku rzeczach niż bardzo dobry w jednej.</p>
+            <div class="break"></div>
+            <label>
+                <input
+                        name="q32"
+                        value=1
+                        type="radio"
+                        class="input-radio"
+                        required
+                />Tak</label
+            >
+            <label>
+                <input
+                        name="q32"
+                        value=0
+                        type="radio"
+                        class="input-radio"
+                />Nie</label
+            >
+        </div>
+        <div class="form-group">
+            <p>33. Wolałbym pracować z osobą, którą lubię, a która nie jest dobra w swojej pracy, niż z kimś, kogo nie lubię, nawet jeśli jest dobry w swojej pracy.</p>
+            <div class="break"></div>
+            <label>
+                <input
+                        name="q33"
+                        value=0
+                        type="radio"
+                        class="input-radio"
+                        required
+                />Tak</label
+            >
+            <label>
+                <input
+                        name="q33"
+                        value=1
+                        type="radio"
+                        class="input-radio"
+                />Nie</label
+            >
+        </div>
+        <div class="form-group">
+            <p>34. Osiągnięcie sukcesu jest wynikiem ciężkiej pracy, szczęście ma z tym niewiele wspólnego.</p>
+            <div class="break"></div>
+            <label>
+                <input
+                        name="q34"
+                        value=1
+                        type="radio"
+                        class="input-radio"
+                        required
+                />Tak</label
+            >
+            <label>
+                <input
+                        name="q34"
+                        value=0
+                        type="radio"
+                        class="input-radio"
+                />Nie</label
+            >
+        </div>
+        <div class="form-group">
+            <p>35. Wolę robić rzeczy w zwykły sposób niż próbować nowych metod.</p>
+            <div class="break"></div>
+            <label>
+                <input
+                        name="q35"
+                        value=0
+                        type="radio"
+                        class="input-radio"
+                        required
+                />Tak</label
+            >
+            <label>
+                <input
+                        name="q35"
+                        value=1
+                        type="radio"
+                        class="input-radio"
+                />Nie</label
+            >
+        </div>
+        <div class="form-group">
+            <p>36. Przed podjęciem ważnej decyzji wolę dość szybko rozważyć wszystkie za i przeciw, niż długo się nad tym zastanawiać.</p>
+            <div class="break"></div>
+            <label>
+                <input
+                        name="q36"
+                        value=1
+                        type="radio"
+                        class="input-radio"
+                        required
+                />Tak</label
+            >
+            <label>
+                <input
+                        name="q36"
+                        value=0
+                        type="radio"
+                        class="input-radio"
+                />Nie</label
+            >
+        </div>
+        <div class="form-group">
+            <p>37. Wolę pracować nad jakimś zadaniem w zespole, niż samemu brać za nie odpowiedzialność.</p>
+            <div class="break"></div>
+            <label>
+                <input
+                        name="q37"
+                        value=0
+                        type="radio"
+                        class="input-radio"
+                        required
+                />Tak</label
+            >
+            <label>
+                <input
+                        name="q37"
+                        value=1
+                        type="radio"
+                        class="input-radio"
+                />Nie</label
+            >
+        </div>
+        <div class="form-group">
+            <p>38. Wolę skorzystać z okazji, która może prowadzić do jeszcze lepszych rzeczy, niż mieć doświadczenie, które na pewno mi się spodoba.</p>
+            <div class="break"></div>
+            <label>
+                <input
+                        name="q38"
+                        value=1
+                        type="radio"
+                        class="input-radio"
+                        required
+                />Tak</label
+            >
+            <label>
+                <input
+                        name="q38"
+                        value=0
+                        type="radio"
+                        class="input-radio"
+                />Nie</label
+            >
+        </div>
+        <div class="form-group">
+            <p>39. Zazwyczaj robię to, czego się ode mnie oczekuje i dokładnie wykonuję polecenia.</p>
+            <div class="break"></div>
+            <label>
+                <input
+                        name="q39"
+                        value=0
+                        type="radio"
+                        class="input-radio"
+                        required
+                />Tak</label
+            >
+            <label>
+                <input
+                        name="q39"
+                        value=1
+                        type="radio"
+                        class="input-radio"
+                />Nie</label
+            >
+        </div>
+        <div class="form-group">
+            <p>40. Dla mnie otrzymanie tego, czego chcę, jest sprawiedliwą nagrodą za moje wysiłki.</p>
+            <div class="break"></div>
+            <label>
+                <input
+                        name="q40"
+                        value=1
+                        type="radio"
+                        class="input-radio"
+                        required
+                />Tak</label
+            >
+            <label>
+                <input
+                        name="q40"
+                        value=0
+                        type="radio"
+                        class="input-radio"
+                />Nie</label
+            >
+        </div>
+        <div class="form-group">
+            <p>41. Lubię mieć swoje życie zorganizowane tak, aby przebiegało gładko i zgodnie z planem.</p>
+            <div class="break"></div>
+            <label>
+                <input
+                        name="q41"
+                        value=0
+                        type="radio"
+                        class="input-radio"
+                        required
+                />Tak</label
+            >
+            <label>
+                <input
+                        name="q41"
+                        value=1
+                        type="radio"
+                        class="input-radio"
+                />Nie</label
+            >
+        </div>
+        <div class="form-group">
+            <p>42. Kiedy staję przed wyzwaniem, myślę bardziej o rezultatach sukcesu niż o skutkach porażki.</p>
+            <div class="break"></div>
+            <label>
+                <input
+                        name="q42"
+                        value=1
+                        type="radio"
+                        class="input-radio"
+                        required
+                />Tak</label
+            >
+            <label>
+                <input
+                        name="q42"
+                        value=0
+                        type="radio"
+                        class="input-radio"
+                />Nie</label
+            >
+        </div>
+        <div class="form-group">
+            <p>43. Wierzę, że przeznaczenie decyduje o tym, co mnie spotka w życiu.</p>
+            <div class="break"></div>
+            <label>
+                <input
+                        name="q43"
+                        value=0
+                        type="radio"
+                        class="input-radio"
+                        required
+                />Tak</label
+            >
+            <label>
+                <input
+                        name="q43"
+                        value=1
+                        type="radio"
+                        class="input-radio"
+                />Nie</label
+            >
+        </div>
+        <div class="form-group">
+            <p>44. Lubię spędzać czas z ludźmi, którzy mają różne sposoby myślenia.</p>
+            <div class="break"></div>
+            <label>
+                <input
+                        name="q44"
+                        value=1
+                        type="radio"
+                        class="input-radio"
+                        required
+                />Tak</label
+            >
+            <label>
+                <input
+                        name="q44"
+                        value=0
+                        type="radio"
+                        class="input-radio"
+                />Nie</label
+            >
+        </div>
+        <div class="form-group">
+            <p>45. Trudno mi prosić innych ludzi o przysługi.</p>
+            <div class="break"></div>
+            <label>
+                <input
+                        name="q45"
+                        value=0
+                        type="radio"
+                        class="input-radio"
+                        required
+                />Tak</label
+            >
+            <label>
+                <input
+                        name="q45"
+                        value=1
+                        type="radio"
+                        class="input-radio"
+                />Nie</label
+            >
+        </div>
+        <div class="form-group">
+            <p>46. Wstaję wcześnie, zostaję do późna lub pomijam posiłki, jeśli mam termin wykonania jakiejś pracy.</p>
+            <div class="break"></div>
+            <label>
+                <input
+                        name="q46"
+                        value=1
+                        type="radio"
+                        class="input-radio"
+                        required
+                />Tak</label
+            >
+            <label>
+                <input
+                        name="q46"
+                        value=0
+                        type="radio"
+                        class="input-radio"
+                />Nie</label
+            >
+        </div>
+        <div class="form-group">
+            <p>47. To, do czego jesteśmy przyzwyczajeni, jest zazwyczaj lepsze niż to, co jest nam obce.</p>
+            <div class="break"></div>
+            <label>
+                <input
+                        name="q47"
+                        value=0
+                        type="radio"
+                        class="input-radio"
+                        required
+                />Tak</label
+            >
+            <label>
+                <input
+                        name="q47"
+                        value=1
+                        type="radio"
+                        class="input-radio"
+                />Nie</label
+            >
+        </div>
+        <div class="form-group">
+            <p>48. Denerwuje mnie, gdy przełożeni lub koledzy przypisują sobie zasługi za moją pracę.</p>
+            <div class="break"></div>
+            <label>
+                <input
+                        name="q48"
+                        value=1
+                        type="radio"
+                        class="input-radio"
+                        required
+                />Tak</label
+            >
+            <label>
+                <input
+                        name="q48"
+                        value=0
+                        type="radio"
+                        class="input-radio"
+                />Nie</label
+            >
+        </div>
+        <div class="form-group">
+            <p>49. Porażki ludzi rzadko są wynikiem ich złej oceny sytuacji.</p>
+            <div class="break"></div>
+            <label>
+                <input
+                        name="q49"
+                        value=0
+                        type="radio"
+                        class="input-radio"
+                        required
+                />Tak</label
+            >
+            <label>
+                <input
+                        name="q49"
+                        value=1
+                        type="radio"
+                        class="input-radio"
+                />Nie</label
+            >
+        </div>
+        <div class="form-group">
+            <p>50. Czasami mam tak wiele pomysłów, że czuję się pod presją.</p>
+            <div class="break"></div>
+            <label>
+                <input
+                        name="q50"
+                        value=1
+                        type="radio"
+                        class="input-radio"
+                        required
+                />Tak</label
+            >
+            <label>
+                <input
+                        name="q50"
+                        value=0
+                        type="radio"
+                        class="input-radio"
+                />Nie</label
+            >
+        </div>
+        <div class="form-group">
+            <p>51. Na wakacjach łatwo jest mi się zrelaksować i zapomnieć o pracy.</p>
+            <div class="break"></div>
+            <label>
+                <input
+                        name="q51"
+                        value=0
+                        type="radio"
+                        class="input-radio"
+                        required
+                />Tak</label
+            >
+            <label>
+                <input
+                        name="q51"
+                        value=1
+                        type="radio"
+                        class="input-radio"
+                />Nie</label
+            >
+        </div>
+        <div class="form-group">
+            <p>52. Dostaję od życia to, czego chcę, ponieważ ciężko pracuję, aby to osiągnąć.</p>
+            <div class="break"></div>
+            <label>
+                <input
+                        name="q52"
+                        value=1
+                        type="radio"
+                        class="input-radio"
+                        required
+                />Tak</label
+            >
+            <label>
+                <input
+                        name="q52"
+                        value=0
+                        type="radio"
+                        class="input-radio"
+                />Nie</label
+            >
+        </div>
+        <div class="form-group">
+            <p>53. Trudniej jest mi dostosować się do zmian niż trzymać się rutyny.</p>
+            <div class="break"></div>
+            <label>
+                <input
+                        name="q53"
+                        value=0
+                        type="radio"
+                        class="input-radio"
+                        required
+                />Tak</label
+            >
+            <label>
+                <input
+                        name="q53"
+                        value=1
+                        type="radio"
+                        class="input-radio"
+                />Nie</label
+            >
+        </div>
+        <div class="form-group">
+            <p>54. Lubię rozpoczynać interesujące projekty, nawet jeśli nie ma gwarancji zwrotu pieniędzy lub czasu, który muszę w nie włożyć.</p>
+            <div class="break"></div>
+            <label>
+                <input
+                        name="q54"
+                        value=1
+                        type="radio"
+                        class="input-radio"
+                        required
+                />Tak</label
+            >
+            <label>
+                <input
+                        name="q54"
+                        value=0
+                        type="radio"
+                        class="input-radio"
+                />Nie</label
+            >
+        </div>
+
+
         <div class="form-group">
             <button type="submit" id="submit" class="submit-button">
                 Prześlij
@@ -208,16 +1167,33 @@
     <h1 id="wyniki" class="text-center" style="padding: 0.75rem 0"></h1>
     <div class="break"></div>
     <div class="bar-div">
-        <p id="srednia12" style="display: inline"></p>
+        <p id="kompetencja1" style="display: inline"></p>
         <div class="bar-bg">
-            <div id="skill1" class="skill" style="height:24px;width:0;background-color: #70c9b3;"></div>
+            <div id="skill1" class="skill" style="height:24px;width:0;background-color: #d0b773;"></div>
         </div>
     </div>
-    <br>
     <div class="bar-div">
-        <p id="srednia34" style="display: inline"></p>
+        <p id="kompetencja2" style="display: inline"></p>
         <div class="bar-bg">
-            <div id="skill2" class="skill" style="height:24px;width:0;background-color: #785aa0;"></div>
+            <div id="skill2" class="skill" style="height:24px;width:0;background-color: #5590c6;"></div>
+        </div>
+    </div>
+    <div class="bar-div">
+        <p id="kompetencja3" style="display: inline"></p>
+        <div class="bar-bg">
+            <div id="skill3" class="skill" style="height:24px;width:0;background-color: #cc73d9;"></div>
+        </div>
+    </div>
+    <div class="bar-div">
+        <p id="kompetencja4" style="display: inline"></p>
+        <div class="bar-bg">
+            <div id="skill4" class="skill" style="height:24px;width:0;background-color: #ee6565;"></div>
+        </div>
+    </div>
+    <div class="bar-div">
+        <p id="kompetencja5" style="display: inline"></p>
+        <div class="bar-bg">
+            <div id="skill5" class="skill" style="height:24px;width:0;background-color: #a3db78;"></div>
         </div>
     </div>
 </div>
@@ -225,36 +1201,49 @@
     function submitHandler(event){
         const form=document.getElementById("survey-form")
         const formData = new FormData(form);
-        let avg12,avg34;
-        let count12 = 0, count34 = 0;
-        let sum12 = 0, sum34 = 0;
-        let skill1_qs = ['q1', 'q2'];
-        let skill2_qs = ['q3', 'q4'];
+        let sum1 = 0, sum2 = 0,sum3 = 0, sum4 = 0,sum5 = 0;
+        let skill1_qs = ['q1', 'q10','q19','q28','q37','q46','q6', 'q15', 'q24', 'q33', 'q42', 'q51'];
+        let skill2_qs = ['q3', 'q12', 'q21', 'q30', 'q39', 'q48'];
+        let skill3_qs = ['q5', 'q14', 'q23', 'q32', 'q41', 'q50','q8', 'q17', 'q26', 'q35', 'q44', 'q53'];
+        let skill4_qs = ['q2', 'q11', 'q20', 'q29', 'q38', 'q47','q9', 'q18', 'q27', 'q36', 'q45', 'q54'];
+        let skill5_qs = ['q4', 'q13', 'q22', 'q31', 'q40', 'q49','q7', 'q16', 'q25', 'q34', 'q43', 'q52'];
         for (const [key, value] of formData) {
             console.log(key)
             if (skill1_qs.includes(key)) {
-                console.log("is in q1q2")
-                count12 += 1
-                sum12 += Number(value)
+                sum1 += Number(value)
+                console.log('skill1')
             } else if (skill2_qs.includes(key)) {
-                console.log("is in q3q4 ")
-                count34 += 1
-                sum34 += Number(value)
+                sum2 += Number(value)
+                console.log('skill2')
+            } else if (skill3_qs.includes(key)) {
+                sum3 += Number(value)
+                console.log('skill3')
+            } else if (skill4_qs.includes(key)) {
+                sum4 += Number(value)
+                console.log('skill4')
+            } else if (skill5_qs.includes(key)) {
+                sum5 += Number(value)
+                console.log('skill5')
             }
         }
-        avg12 = sum12/count12
-        avg34 = sum34/count34
         const bars = document.querySelectorAll(".bar-bg")
         bars.forEach(bar => {
-            bar.style.width = '70%';
+            bar.style.width = '40%';
         })
         document.getElementById("wyniki").innerText= "Wyniki:";
-        document.getElementById("srednia12").innerHTML = "Kompetencja 1:    " + avg12.toFixed(2)
-        document.getElementById("srednia34").innerHTML = "Kompetencja 2:    " + avg34.toFixed(2)
+        document.getElementById("kompetencja1").innerHTML = "Potrzeba osiągnięć:    " + sum1
+        document.getElementById("kompetencja2").innerHTML = "Potrzeba autonomii:    " + sum2
+        document.getElementById("kompetencja3").innerHTML = "Tendencje twórcze:    " + sum3
+        document.getElementById("kompetencja4").innerHTML = "Kalkulowane podejmowanie ryzyka :    " + sum4
+        document.getElementById("kompetencja5").innerHTML = "Umiejscowienie kontroli:    " + sum5
         window.scrollTo({ top: document.body.scrollHeight, behavior: 'smooth' })
         document.getElementById("results").style.opacity = "100%";
-        document.getElementById("skill1").style.width = (avg12-1)*25+"%"
-        document.getElementById("skill2").style.width = (avg34-1)*25+"%"
+        document.getElementById("skill1").style.width = sum1/12*100+"%"
+        document.getElementById("skill2").style.width = sum2/6*100+"%"
+        document.getElementById("skill3").style.width = sum3/12*100+"%"
+        document.getElementById("skill4").style.width = sum4/12*100+"%"
+        document.getElementById("skill5").style.width = sum5/12*100+"%"
+
 
     }
 </script>
