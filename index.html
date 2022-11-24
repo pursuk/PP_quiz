@@ -2,6 +2,7 @@
 <html lang="en">
 <head>
     <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
     <title>PP quiz</title>
     <link rel="stylesheet" href="main.css">
 </head>
@@ -16,7 +17,7 @@
             Dla każdego stwierdzenia kliknij odpowiedź, która najlepiej wyraża Twoje zdanie.
             Odpowiadaj na wszystkie pytania szybko i szczerze, ponieważ w ten sposób uzyskasz najlepszy obraz siebie, jakim jesteś obecnie.
             <br>
-            Źródło: http://www.get2test.net/
+            Źródło: <a href="http://www.get2test.net/">http://www.get2test.net/</a>
         </p>
     </header>
     <form id="survey-form" onsubmit="event.preventDefault(); submitHandler();">
@@ -1163,37 +1164,42 @@
         </div>
     </form>
 </div>
-<div id="results" class="results" style="opacity: 0">
+<div id="results" class="results container" style="opacity: 0">
     <h1 id="wyniki" class="text-center" style="padding: 0.75rem 0"></h1>
     <div class="break"></div>
     <div class="bar-div">
         <p id="kompetencja1" style="display: inline"></p>
         <div class="bar-bg">
-            <div id="skill1" class="skill" style="height:24px;width:0;background-color: #d0b773;"></div>
+            <div class="bar-text" id="skill1text"></div>
+            <div id="skill1" class="skill" style="background-color: #d0b773;"></div>
         </div>
     </div>
     <div class="bar-div">
         <p id="kompetencja2" style="display: inline"></p>
         <div class="bar-bg">
-            <div id="skill2" class="skill" style="height:24px;width:0;background-color: #5590c6;"></div>
+            <div class="bar-text" id="skill2text"></div>
+            <div id="skill2" class="skill" style="background-color: #5590c6;"></div>
         </div>
     </div>
     <div class="bar-div">
         <p id="kompetencja3" style="display: inline"></p>
         <div class="bar-bg">
-            <div id="skill3" class="skill" style="height:24px;width:0;background-color: #cc73d9;"></div>
+            <div class="bar-text" id="skill3text"></div>
+            <div id="skill3" class="skill" style="background-color: #cc73d9;"></div>
         </div>
     </div>
     <div class="bar-div">
         <p id="kompetencja4" style="display: inline"></p>
         <div class="bar-bg">
-            <div id="skill4" class="skill" style="height:24px;width:0;background-color: #ee6565;"></div>
+            <div class="bar-text" id="skill4text"></div>
+            <div id="skill4" class="skill" style="background-color: #ee6565;"></div>
         </div>
     </div>
     <div class="bar-div">
         <p id="kompetencja5" style="display: inline"></p>
         <div class="bar-bg">
-            <div id="skill5" class="skill" style="height:24px;width:0;background-color: #a3db78;"></div>
+            <div class="bar-text" id="skill5text"></div>
+            <div id="skill5" class="skill" style="background-color: #a3db78;"></div>
         </div>
     </div>
 </div>
@@ -1228,14 +1234,14 @@
         }
         const bars = document.querySelectorAll(".bar-bg")
         bars.forEach(bar => {
-            bar.style.width = '40%';
+            bar.style.width = '90%';
         })
         document.getElementById("wyniki").innerText= "Wyniki:";
-        document.getElementById("kompetencja1").innerHTML = "Potrzeba osiągnięć:    " + sum1
-        document.getElementById("kompetencja2").innerHTML = "Potrzeba autonomii:    " + sum2
-        document.getElementById("kompetencja3").innerHTML = "Tendencje twórcze:    " + sum3
-        document.getElementById("kompetencja4").innerHTML = "Kalkulowane podejmowanie ryzyka :    " + sum4
-        document.getElementById("kompetencja5").innerHTML = "Umiejscowienie kontroli:    " + sum5
+        document.getElementById("skill1text").innerHTML = "Potrzeba osiągnięć: " + sum1
+        document.getElementById("skill2text").innerHTML = "Potrzeba autonomii: " + sum2
+        document.getElementById("skill3text").innerHTML = "Tendencje twórcze: " + sum3
+        document.getElementById("skill4text").innerHTML = "Kalkulowane podejmowanie ryzyka asdddd dsasddas: " + sum4
+        document.getElementById("skill5text").innerHTML = "Umiejscowienie kontroli: " + sum5
         window.scrollTo({ top: document.body.scrollHeight, behavior: 'smooth' })
         document.getElementById("results").style.opacity = "100%";
         document.getElementById("skill1").style.width = sum1/12*100+"%"
@@ -1243,8 +1249,6 @@
         document.getElementById("skill3").style.width = sum3/12*100+"%"
         document.getElementById("skill4").style.width = sum4/12*100+"%"
         document.getElementById("skill5").style.width = sum5/12*100+"%"
-
-
     }
 </script>
 </body>
